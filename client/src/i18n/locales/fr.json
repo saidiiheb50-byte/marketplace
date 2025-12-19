@@ -1,0 +1,238 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "browse": "Parcourir",
+    "sell": "Vendre",
+    "cart": "Panier",
+    "wishlist": "Liste de souhaits",
+    "messages": "Messages",
+    "orders": "Commandes",
+    "admin": "Administrateur",
+    "login": "Connexion",
+    "signUp": "S'inscrire",
+    "logout": "Déconnexion"
+  },
+  "home": {
+    "title": "Bienvenue sur Béja Marketplace",
+    "subtitle": "Achetez et vendez des articles d'occasion dans votre communauté locale",
+    "browseItems": "Parcourir les articles",
+    "startSelling": "Commencer à vendre",
+    "features": {
+      "buyingSelling": {
+        "title": "Achat et vente faciles",
+        "description": "Listez vos articles ou trouvez de bonnes affaires dans votre communauté. Transactions simples, rapides et sécurisées."
+      },
+      "localFocus": {
+        "title": "Communauté locale",
+        "description": "Connectez-vous avec vos voisins à Béja. Achetez et vendez localement avec des membres de confiance de la communauté."
+      },
+      "trusted": {
+        "title": "Sûr et sécurisé",
+        "description": "Utilisateurs vérifiés et messagerie sécurisée. Votre sécurité est notre priorité."
+      }
+    },
+    "browseByCategory": "Parcourir par catégorie",
+    "latestItems": "Derniers articles",
+    "viewAll": "Voir tout",
+    "noProducts": "Aucun produit disponible pour le moment"
+  },
+  "products": {
+    "title": "Parcourir les produits",
+    "searchPlaceholder": "Rechercher des produits...",
+    "allCategories": "Toutes les catégories",
+    "minPrice": "Prix min",
+    "maxPrice": "Prix max",
+    "sort": {
+      "newest": "Plus récent d'abord",
+      "oldest": "Plus ancien d'abord",
+      "priceLow": "Prix: Croissant",
+      "priceHigh": "Prix: Décroissant"
+    },
+    "noProducts": "Aucun produit trouvé",
+    "loading": "Chargement des produits..."
+  },
+  "productDetail": {
+    "description": "Description",
+    "condition": "État",
+    "stock": "Stock",
+    "available": "disponible",
+    "sellerInfo": "Informations du vendeur",
+    "addToCart": "Ajouter au panier",
+    "adding": "Ajout en cours...",
+    "inWishlist": "Dans la liste de souhaits",
+    "addToWishlist": "Ajouter à la liste de souhaits",
+    "messageSeller": "Contacter le vendeur",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "reviews": {
+      "title": "Avis clients",
+      "writeReview": "Écrire un avis",
+      "cancel": "Annuler",
+      "rating": "Note",
+      "comment": "Commentaire",
+      "submit": "Soumettre l'avis",
+      "noReviews": "Aucun avis pour le moment. Soyez le premier à noter!",
+      "shareExperience": "Partagez votre expérience..."
+    },
+    "quantity": "Quantité"
+  },
+  "cart": {
+    "title": "Panier",
+    "empty": "Votre panier est vide",
+    "emptyDescription": "Ajoutez des produits pour commencer!",
+    "browseProducts": "Parcourir les produits",
+    "orderSummary": "Résumé de la commande",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "free": "Gratuit",
+    "total": "Total",
+    "proceedToCheckout": "Passer à la caisse",
+    "soldBy": "Vendu par",
+    "maxStock": "Stock maximum atteint"
+  },
+  "checkout": {
+    "title": "Paiement",
+    "shippingAddress": "Adresse de livraison",
+    "shippingPlaceholder": "Entrez votre adresse de livraison complète...",
+    "paymentMethod": "Méthode de paiement",
+    "cashOnDelivery": "Paiement à la livraison",
+    "cashOnDeliveryDesc": "Payez lorsque vous recevez la commande",
+    "bankTransfer": "Virement bancaire",
+    "bankTransferDesc": "Transférez des fonds sur le compte du vendeur",
+    "orderItems": "Articles de la commande",
+    "placeOrder": "Passer la commande",
+    "processing": "Traitement en cours..."
+  },
+  "orders": {
+    "title": "Mes commandes",
+    "empty": "Aucune commande pour le moment",
+    "emptyDescription": "Commencez vos achats pour voir vos commandes ici!",
+    "order": "Commande",
+    "items": "article(s)",
+    "payment": "Paiement"
+  },
+  "orderDetail": {
+    "backToOrders": "Retour aux commandes",
+    "placedOn": "Passée le",
+    "shippingAddress": "Adresse de livraison",
+    "paymentMethod": "Méthode de paiement",
+    "orderItems": "Articles de la commande",
+    "each": "chacun"
+  },
+  "wishlist": {
+    "title": "Ma liste de souhaits",
+    "empty": "Votre liste de souhaits est vide",
+    "emptyDescription": "Commencez à ajouter des produits que vous aimez!",
+    "addToCart": "Ajouter au panier",
+    "outOfStock": "Rupture de stock"
+  },
+  "messages": {
+    "title": "Messages",
+    "conversations": "Conversations",
+    "noConversations": "Aucune conversation pour le moment",
+    "selectConversation": "Sélectionnez une conversation pour commencer à discuter",
+    "typeMessage": "Tapez un message...",
+    "noMessages": "Aucun message pour le moment. Commencez la conversation!",
+    "startConversation": "Commencez la conversation!"
+  },
+  "auth": {
+    "login": {
+      "title": "Connexion",
+      "email": "Email",
+      "password": "Mot de passe",
+      "submit": "Se connecter",
+      "noAccount": "Vous n'avez pas de compte?",
+      "signUp": "S'inscrire"
+    },
+    "register": {
+      "title": "Créer un compte",
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Numéro de téléphone",
+      "password": "Mot de passe",
+      "confirmPassword": "Confirmer le mot de passe",
+      "submit": "S'inscrire",
+      "haveAccount": "Vous avez déjà un compte?",
+      "login": "Se connecter"
+    }
+  },
+  "createProduct": {
+    "title": "Lister un nouveau produit",
+    "titleField": "Titre",
+    "titlePlaceholder": "ex: iPhone 12 Pro Max",
+    "description": "Description",
+    "descriptionPlaceholder": "Décrivez votre article en détail...",
+    "price": "Prix (TND)",
+    "category": "Catégorie",
+    "selectCategory": "Sélectionner une catégorie",
+    "condition": "État",
+    "stockQuantity": "Quantité en stock",
+    "images": "Images (URLs)",
+    "addImage": "Ajouter une URL d'image",
+    "createListing": "Créer l'annonce",
+    "creating": "Création en cours...",
+    "cancel": "Annuler"
+  },
+  "editProduct": {
+    "title": "Modifier le produit",
+    "updateListing": "Mettre à jour l'annonce",
+    "updating": "Mise à jour en cours...",
+    "cancel": "Annuler"
+  },
+  "common": {
+    "loading": "Chargement...",
+    "error": "Erreur",
+    "success": "Succès",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "confirm": "Confirmer",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "welcomeModal": {
+    "title": "Bienvenue sur Béja Marketplace",
+    "subtitle": "Veuillez sélectionner votre type de compte pour continuer",
+    "buyer": {
+      "title": "Je suis un acheteur",
+      "description": "Parcourir et acheter des articles auprès de vendeurs locaux",
+      "freeAccount": "Compte gratuit",
+      "browseAll": "Parcourir tous les produits",
+      "cartWishlist": "Ajouter au panier et à la liste de souhaits",
+      "contactSellers": "Contacter les vendeurs"
+    },
+    "seller": {
+      "title": "Je suis un vendeur",
+      "description": "Listez vos produits et commencez à vendre",
+      "paymentRequired": "Paiement requis",
+      "unlimitedListings": "Créer des annonces illimitées",
+      "sellerDashboard": "Accéder au tableau de bord vendeur",
+      "manageSales": "Gérer les ventes et commandes"
+    },
+    "buyerChoice": {
+      "title": "Comment souhaitez-vous continuer ?",
+      "subtitle": "Choisissez une option pour continuer",
+      "createAccount": {
+        "title": "Créer un compte",
+        "description": "Inscrivez-vous pour un compte gratuit et profitez de l'expérience complète",
+        "saveFavorites": "Enregistrer les favoris et le panier",
+        "trackOrders": "Suivre vos commandes",
+        "contactSellers": "Contacter les vendeurs facilement",
+        "recommendations": "Obtenir des recommandations personnalisées"
+      },
+      "browseWithoutAccount": {
+        "title": "Parcourir sans compte",
+        "description": "Explorez les produits sans créer de compte",
+        "browseAll": "Parcourir tous les produits",
+        "viewDetails": "Voir les détails des produits",
+        "limitedFeatures": "Fonctionnalités limitées (pas de panier/liste de souhaits)",
+        "signUpAnytime": "Inscrivez-vous à tout moment pour débloquer toutes les fonctionnalités"
+      },
+      "back": "← Retour"
+    },
+    "changeLater": "Vous pouvez changer votre type de compte plus tard dans les paramètres",
+    "close": "Fermer"
+  }
+}
+

@@ -1,0 +1,238 @@
+{
+  "nav": {
+    "home": "Home",
+    "browse": "Browse",
+    "sell": "Sell",
+    "cart": "Cart",
+    "wishlist": "Wishlist",
+    "messages": "Messages",
+    "orders": "Orders",
+    "admin": "Admin",
+    "login": "Login",
+    "signUp": "Sign Up",
+    "logout": "Logout"
+  },
+  "home": {
+    "title": "Welcome to Béja Marketplace",
+    "subtitle": "Buy and sell used items in your local community",
+    "browseItems": "Browse Items",
+    "startSelling": "Start Selling",
+    "features": {
+      "buyingSelling": {
+        "title": "Easy Buying & Selling",
+        "description": "List your items in minutes and connect with local buyers"
+      },
+      "localFocus": {
+        "title": "Local Focus",
+        "description": "All items are from Béja, making transactions easy and safe"
+      },
+      "trusted": {
+        "title": "Trusted Community",
+        "description": "Verified users and secure transactions"
+      }
+    },
+    "browseByCategory": "Browse by Category",
+    "latestItems": "Latest Items",
+    "viewAll": "View All",
+    "noProducts": "No products available yet"
+  },
+  "products": {
+    "title": "Browse Products",
+    "searchPlaceholder": "Search products...",
+    "allCategories": "All Categories",
+    "minPrice": "Min Price",
+    "maxPrice": "Max Price",
+    "sort": {
+      "newest": "Newest First",
+      "oldest": "Oldest First",
+      "priceLow": "Price: Low to High",
+      "priceHigh": "Price: High to Low"
+    },
+    "noProducts": "No products found",
+    "loading": "Loading products..."
+  },
+  "productDetail": {
+    "description": "Description",
+    "condition": "Condition",
+    "stock": "Stock",
+    "available": "available",
+    "sellerInfo": "Seller Information",
+    "addToCart": "Add to Cart",
+    "adding": "Adding...",
+    "inWishlist": "In Wishlist",
+    "addToWishlist": "Add to Wishlist",
+    "messageSeller": "Message Seller",
+    "edit": "Edit",
+    "delete": "Delete",
+    "reviews": {
+      "title": "Customer Reviews",
+      "writeReview": "Write a Review",
+      "cancel": "Cancel",
+      "rating": "Rating",
+      "comment": "Comment",
+      "submit": "Submit Review",
+      "noReviews": "No reviews yet. Be the first to review!",
+      "shareExperience": "Share your experience..."
+    },
+    "quantity": "Quantity"
+  },
+  "cart": {
+    "title": "Shopping Cart",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Add some products to get started!",
+    "browseProducts": "Browse Products",
+    "orderSummary": "Order Summary",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "free": "Free",
+    "total": "Total",
+    "proceedToCheckout": "Proceed to Checkout",
+    "soldBy": "Sold by",
+    "maxStock": "Max stock reached"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "shippingAddress": "Shipping Address",
+    "shippingPlaceholder": "Enter your full shipping address...",
+    "paymentMethod": "Payment Method",
+    "cashOnDelivery": "Cash on Delivery",
+    "cashOnDeliveryDesc": "Pay when you receive the order",
+    "bankTransfer": "Bank Transfer",
+    "bankTransferDesc": "Transfer funds to seller's account",
+    "orderItems": "Order Items",
+    "placeOrder": "Place Order",
+    "processing": "Processing..."
+  },
+  "orders": {
+    "title": "My Orders",
+    "empty": "No orders yet",
+    "emptyDescription": "Start shopping to see your orders here!",
+    "order": "Order",
+    "items": "item(s)",
+    "payment": "Payment"
+  },
+  "orderDetail": {
+    "backToOrders": "Back to Orders",
+    "placedOn": "Placed on",
+    "shippingAddress": "Shipping Address",
+    "paymentMethod": "Payment Method",
+    "orderItems": "Order Items",
+    "each": "each"
+  },
+  "wishlist": {
+    "title": "My Wishlist",
+    "empty": "Your wishlist is empty",
+    "emptyDescription": "Start adding products you love!",
+    "addToCart": "Add to Cart",
+    "outOfStock": "Out of Stock"
+  },
+  "messages": {
+    "title": "Messages",
+    "conversations": "Conversations",
+    "noConversations": "No conversations yet",
+    "selectConversation": "Select a conversation to start messaging",
+    "typeMessage": "Type a message...",
+    "noMessages": "No messages yet. Start the conversation!",
+    "startConversation": "Start the conversation!"
+  },
+  "auth": {
+    "login": {
+      "title": "Login",
+      "email": "Email",
+      "password": "Password",
+      "submit": "Login",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign Up"
+    },
+    "register": {
+      "title": "Create Account",
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone Number",
+      "password": "Password",
+      "confirmPassword": "Confirm Password",
+      "submit": "Register",
+      "haveAccount": "Already have an account?",
+      "login": "Login"
+    }
+  },
+  "createProduct": {
+    "title": "List a New Product",
+    "titleField": "Title",
+    "titlePlaceholder": "e.g., iPhone 12 Pro Max",
+    "description": "Description",
+    "descriptionPlaceholder": "Describe your item in detail...",
+    "price": "Price (TND)",
+    "category": "Category",
+    "selectCategory": "Select a category",
+    "condition": "Condition",
+    "stockQuantity": "Stock Quantity",
+    "images": "Images (URLs)",
+    "addImage": "Add Image URL",
+    "createListing": "Create Listing",
+    "creating": "Creating...",
+    "cancel": "Cancel"
+  },
+  "editProduct": {
+    "title": "Edit Product",
+    "updateListing": "Update Listing",
+    "updating": "Updating...",
+    "cancel": "Cancel"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "confirm": "Confirm",
+    "yes": "Yes",
+    "no": "No"
+  },
+  "welcomeModal": {
+    "title": "Welcome to Béja Marketplace",
+    "subtitle": "Please select your account type to continue",
+    "buyer": {
+      "title": "I'm a Buyer",
+      "description": "Browse and purchase items from local sellers",
+      "freeAccount": "Free account",
+      "browseAll": "Browse all products",
+      "cartWishlist": "Add to cart & wishlist",
+      "contactSellers": "Contact sellers"
+    },
+    "seller": {
+      "title": "I'm a Seller",
+      "description": "List your products and start selling",
+      "paymentRequired": "Payment required",
+      "unlimitedListings": "Create unlimited listings",
+      "sellerDashboard": "Access seller dashboard",
+      "manageSales": "Manage sales & orders"
+    },
+    "buyerChoice": {
+      "title": "How would you like to continue?",
+      "subtitle": "Choose an option to proceed",
+      "createAccount": {
+        "title": "Create Account",
+        "description": "Sign up for a free account to get the full experience",
+        "saveFavorites": "Save favorites & cart",
+        "trackOrders": "Track your orders",
+        "contactSellers": "Contact sellers easily",
+        "recommendations": "Get personalized recommendations"
+      },
+      "browseWithoutAccount": {
+        "title": "Browse Without Account",
+        "description": "Explore products without creating an account",
+        "browseAll": "Browse all products",
+        "viewDetails": "View product details",
+        "limitedFeatures": "Limited features (no cart/wishlist)",
+        "signUpAnytime": "Sign up anytime to unlock full features"
+      },
+      "back": "← Back"
+    },
+    "changeLater": "You can change your account type later in settings",
+    "close": "Close"
+  }
+}
+
