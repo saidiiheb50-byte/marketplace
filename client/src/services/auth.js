@@ -15,7 +15,11 @@ export const register = async (userData) => {
       throw error;
     } else if (error.request) {
       // Request made but no response
-      throw new Error('Network error. Please check if the server is running.');
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      if (apiUrl.includes('localhost')) {
+        throw new Error('Cannot connect to API. Please configure VITE_API_URL environment variable in Vercel settings with your backend URL.');
+      }
+      throw new Error(`Network error. Cannot reach API at ${apiUrl}. Please check if the server is running.`);
     } else {
       // Something else happened
       throw new Error('An error occurred during registration.');
@@ -38,7 +42,11 @@ export const login = async (email, password) => {
       throw error;
     } else if (error.request) {
       // Request made but no response
-      throw new Error('Network error. Please check if the server is running.');
+      const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+      if (apiUrl.includes('localhost')) {
+        throw new Error('Cannot connect to API. Please configure VITE_API_URL environment variable in Vercel settings with your backend URL.');
+      }
+      throw new Error(`Network error. Cannot reach API at ${apiUrl}. Please check if the server is running.`);
     } else {
       // Something else happened
       throw new Error('An error occurred during login.');

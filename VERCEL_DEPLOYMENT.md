@@ -16,15 +16,23 @@
    - **Output Directory**: `dist`
    - **Install Command**: `npm install`
 
-### 2. Environment Variables
+### 2. Environment Variables (CRITICAL - This fixes the "Network error" message!)
 
 Go to **Settings** → **Environment Variables** and add:
 
-```
-VITE_API_URL=https://your-backend-api-url.com/api
-```
+**Name:** `VITE_API_URL`  
+**Value:** `https://your-backend-api-url.com/api`
 
-**Important**: Replace `https://your-backend-api-url.com/api` with your actual backend API URL. If your backend is also deployed, use that URL. If not, you'll need to deploy your backend server separately (e.g., on Railway, Render, or another hosting service).
+**Important**: 
+- Replace `https://your-backend-api-url.com/api` with your actual backend API URL
+- **This is REQUIRED** - without it, the app will try to connect to `localhost:5000` which doesn't exist on Vercel
+- If your backend is not deployed yet, you need to deploy it first (e.g., on Railway, Render, Heroku, or another hosting service)
+- Make sure your backend CORS settings allow requests from your Vercel domain
+
+**Example values:**
+- Railway: `https://your-app.railway.app/api`
+- Render: `https://your-app.onrender.com/api`
+- Heroku: `https://your-app.herokuapp.com/api`
 
 ### 3. Build Settings
 
@@ -40,10 +48,13 @@ The `vercel.json` file has been configured to:
 - Make sure Root Directory is set to `client`
 - Check browser console for errors
 
-**API Errors:**
-- Make sure `VITE_API_URL` environment variable is set in Vercel
+**API Errors / "Network error" message:**
+- ✅ **MOST COMMON FIX**: Make sure `VITE_API_URL` environment variable is set in Vercel
+- The error "Network error. Please check if the server is running" means the app is trying to connect to `localhost:5000`
+- Set `VITE_API_URL` to your deployed backend URL (e.g., `https://your-backend.railway.app/api`)
 - Ensure your backend API is accessible from the internet
-- Check CORS settings on your backend
+- Check CORS settings on your backend to allow your Vercel domain
+- After adding the environment variable, **redeploy** your Vercel project
 
 **Build Failures:**
 - Make sure all dependencies are in `package.json`
@@ -55,4 +66,5 @@ The `vercel.json` file has been configured to:
 - [ ] `VITE_API_URL` environment variable added
 - [ ] Backend API is deployed and accessible
 - [ ] CORS is configured on backend to allow your Vercel domain
+
 
