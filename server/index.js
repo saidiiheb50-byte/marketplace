@@ -19,11 +19,52 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// Middleware
+// CORS Configuration - Allow multiple origins
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'https://marketplace-rosy-phi.vercel.app',
+  process.env.CLIENT_URL
+].filter(Boolean); // Remove undefined values
+
+// Add wildcard for Vercel preview deployments
+if (process.env.CLIENT_URL && process.env.CLIENT_URL.includes('vercel.app')) {
+  allowedOrigins.push(/^https:\/\/.*\.vercel\.app$/);
+}
+
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:5173',
-  credentials: true
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    // Check if origin is in allowed list
+    if (allowedOrigins.some(allowed => {
+      if (allowed instanceof RegExp) {
+        return allowed.test(origin);
+      }
+      return allowed === origin;
+    })) {
+      callback(null, true);
+    } else {
+      // For development, allow all origins (less secure but convenient)
+      if (process.env.NODE_ENV !== 'production') {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    }
+  },
+  credentials: true,
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization', 'X-Requested-With'],
+  exposedHeaders: ['Authorization'],
+  preflightContinue: false,
+  optionsSuccessStatus: 204
 }));
+
+// Handle preflight requests explicitly
+app.options('*', cors());
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
