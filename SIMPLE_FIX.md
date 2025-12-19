@@ -75,3 +75,4 @@ Copy the response and check if categories have `image_url` field.
 
 
 
+
