@@ -8,6 +8,42 @@ import { checkUsersTable } from '../utils/dbCheck.js';
 
 const router = express.Router();
 
+// List available auth endpoints
+router.get('/', (req, res) => {
+  res.json({
+    message: 'Authentication endpoints',
+    availableEndpoints: {
+      register: {
+        method: 'POST',
+        path: '/api/auth/register',
+        description: 'Register a new user',
+        body: {
+          name: 'string (min 2 chars)',
+          email: 'string (valid email)',
+          password: 'string (min 6 chars)',
+          phone: 'string (optional)',
+          user_type: 'string (buyer|seller, default: buyer)'
+        }
+      },
+      login: {
+        method: 'POST',
+        path: '/api/auth/login',
+        description: 'Login with email and password',
+        body: {
+          email: 'string (valid email)',
+          password: 'string'
+        }
+      },
+      me: {
+        method: 'GET',
+        path: '/api/auth/me',
+        description: 'Get current authenticated user',
+        requiresAuth: true
+      }
+    }
+  });
+});
+
 // Register
 router.post('/register',
   [
