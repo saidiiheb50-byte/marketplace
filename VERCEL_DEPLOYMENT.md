@@ -4,6 +4,9 @@
 ✅ Added `vercel.json` for proper SPA routing
 ✅ Updated Vite config for production builds
 
+## ⚠️ Before You Start
+**You need a deployed backend API first!** If you haven't deployed your backend yet, see `BACKEND_DEPLOYMENT.md` for instructions.
+
 ## Vercel Configuration Steps
 
 ### 1. Project Settings in Vercel Dashboard
@@ -26,7 +29,7 @@ Go to **Settings** → **Environment Variables** and add:
 **Important**: 
 - Replace `https://your-backend-api-url.com/api` with your actual backend API URL
 - **This is REQUIRED** - without it, the app will try to connect to `localhost:5000` which doesn't exist on Vercel
-- If your backend is not deployed yet, you need to deploy it first (e.g., on Railway, Render, Heroku, or another hosting service)
+- **If your backend is not deployed yet**, see `BACKEND_DEPLOYMENT.md` for step-by-step instructions
 - Make sure your backend CORS settings allow requests from your Vercel domain
 
 **Example values:**
